@@ -22,7 +22,7 @@ get_filesizes() {
 # Function: Count frequency 
 #
 awk_valuecounter() {
-	awk -F, '{a[$1]++;}END{for (i in a)print i, a[i];}'
+	awk -F, '{a[$1]++;}END{for (i in a)print i","a[i];}'
 }
 
 # Results using awk
